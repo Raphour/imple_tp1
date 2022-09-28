@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Composants</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Bouton Classique (taille large / Medium / Small) (importance Primary / Secondary / Tertiary) -->
+        <!-- Large -->
+        <button class="button button_primary button_large">Button 1L</button>
+        <button class="button button_large button_secondary">Button 2L</button>
+        <button class="button button_tertiary button_large">Button 3L</button>
+        <!-- Medium -->
+        <button class="button button_primary button_medium">Button 1M</button>
+        <button class="button button_medium button_secondary">Button 2M</button>
+        <button class="button button_tertiary button_medium">Button 3M</button>
+        <!-- Small -->
+        <button class="button button_primary button_small">Button 1S</button>
+        <button class="button button_small button_secondary">Button 2S</button>
+        <button class="button button_tertiary button_small">Button 3S</button>
+        <!-- Bouton flèche cliquable -->
+        <!-- Primary -->
+        <button class="button button_primary button_large_icon">button click 1L <img class="white_svg" id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_primary button_medium_icon">button click 1M <img class="white_svg" id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_primary button_small_icon">button click 1S <img class="white_svg" id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <!-- Secondary -->
+
+        <button class="button button_secondary button_large_icon">button click 2L<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_secondary button_medium_icon">button click 2M<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_secondary button_small_icon">button click 2S<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+
+        <!-- Tertiaty -->
+        <button class="button button_tertiary button_large_icon">button click 3s<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_tertiary button_medium_icon">button click 3s<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_tertiary button_small_icon">button click 3s<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+
+        <!-- Bouton Transparent Large Medium Et Small, Cliquable ou non -->
+        <button class="button button_transparent button_large">Cliquez Ici</button>
+        <button class="button button_transparent button_medium">Cliquez Ici</button>
+        <button class="button button_transparent button_small">Cliquez Ici</button>
+
+
+        <button class="button button_transparent button_large_icon">Cliquez Ici<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_transparent button_medium_icon">Cliquez Ici<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+        <button class="button button_transparent button_small_icon">Cliquez Ici<img  id="icon" src="assets/icons/eva_chevron-right-outline.svg" alt="chevron_droit"></button>
+
+        <!-- Round Plus Bouton Effet de Hover + Effet Désactivé -->
+        <button class="button round_button ">
+            <img src="assets/icons/eva_plus-fill.svg" alt="Icone plus">
+        </button>
+        <button class="button round_button" disabled>
+            <img src="assets/icons/eva_plus-fill.svg" alt="Icone plus">
+        </button>
+    </div>
+
+    <!-- Entrée de forumulaire : état possible enabled or disabled -->
+    <!-- Pour les deux types, possibilité d'enlever d'enlever le petit texte d'aide -->
+    <!-- Ne pas oublier de changer l'id et le for pour qu'ils soit effectifs -->
+    <div class="form_container">
+        <label for="champx" id="label1">Un libellé</label>
+        <input  placeholder="Placeholder" class="input" type="text" name="champx" id="champx" >
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div>    
+    <div class="form_container">
+        <label for="champx" id="label1">Un libellé</label>
+        <input disabled placeholder="Placeholder" class="input" type="text" name="champx" id="champx" >
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div>  
+
+    <!-- Entrée de forumulaire pouvant être valide ou invalide : état possible enabled or disabled -->
+    <div class="form_container">
+        <label for="champsx" id="label1">Un libellé</label>
+        <input placeholder="Placeholder" class="input validation" type="email" name="champsx" id="champsx" >
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div>  
+    <div class="form_container">
+        <label for="champsx" id="label1">Un libellé</label>
+        <input disabled placeholder="Placeholder" class="input validation" type="email" name="champsx" id="champsx" >
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div> 
+
+    <!-- Input avec Icon changement couleur icon en fonctionne pas -->
+    <div class="form_container">
+        <label for="champx" id="label1">Un libellé</label>
+        <input  placeholder="Placeholder" class="input_icon input" type="email" name="champx" id="champx" >
+        
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div>  
+    <div class="form_container">
+        <label for="champx" id="label1">Un libellé</label>
+        <input disabled placeholder="Placeholder" class="input_icon input" type="email" name="champx" id="champx" >
+        
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div> 
+
+    <div class="form_container">
+        <label for="champx" id="label1">Un libellé</label>
+        <input  placeholder="Placeholder" class="input_icon input validation" type="email" name="champx" id="champx" >
+        
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div>  
+    <div class="form_container">
+        <label for="champx" id="label1">Un libellé</label>
+        <input disabled placeholder="Placeholder" class="input_icon input validation" type="email" name="champx" id="champx" >
+        
+        <p class="text-aide">Un petit texte d'aide</p>
+        
+    </div> 
+</body>
+</html>
