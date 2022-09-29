@@ -354,6 +354,7 @@ img{
 .banner  .main_text{
     font-size: 16px;
     font-weight:600 ;
+    height: fit-content;
 }
 
 .banner .icon_container {
@@ -400,6 +401,30 @@ img.banner_icon.green{
     align-self: flex-end;
     display: flex;
 }
+
+.filled.blue {
+    background-color: var(--green-100);
+}
+.filled.red{
+    background-color: var(--alertred-100);
+}
+.filled.green{
+    background-color: var(--alertgreen-100);
+}
+
+.filled .white{
+    color: var(--bw-700);
+}
+
+.filled  .right_banner_logo.white{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(101%);
+}
+
+.oneline .banner_left_content {
+    align-items: center; 
+}
+
+
  /* input[type=checkbox]{
     display: none;  
 
